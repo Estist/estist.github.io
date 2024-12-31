@@ -18,7 +18,7 @@ layout: home
 <center>
  <iframe width="560" 
          height="315" 
-         src="http://www.youtube.com/embed/IdxLhUqOf-U" 
+         src="https://www.youtube.com/embed/IdxLhUqOf-U" 
          title="Reel" 
          frameborder="0" 
          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
