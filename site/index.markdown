@@ -151,9 +151,9 @@ layout: home
     <img src="/images/airborne.jpg" alt="Airb">
     <img src="/images/cleanupcapsule.jpg" alt="Clean">
     <img src="/images/shipMiner2cropped.png" alt="Ship">
-    <img src="/images/lqcr.png" alt="Studio 3">
+    <img src="/images/bonsai.png" alt="Studio 3">
     <img src="/images/scaloni2.png" alt="Studio 3">
-    <img src="/images/uruguay.png" alt="Studio 3">
+    <img src="/images/titans.png" alt="Studio 3">
 </div>
 
 <!--{:refdef: style="text-align: center;"}
