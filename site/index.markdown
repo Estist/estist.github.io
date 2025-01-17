@@ -14,11 +14,12 @@ layout: home
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
 
 .custom-header {
     background: linear-gradient(to bottom, #1a1a1a, #2d2d2d);
     padding: 3rem 0;
-    margin-bottom: 2rem;
+    margin: 0;
     text-align: center;
     width: 100vw;
     position: relative;
@@ -26,6 +27,8 @@ layout: home
     right: 50%;
     margin-left: -50vw;
     margin-right: -50vw;
+    margin-top: -2rem; /* Remove top white space */
+    margin-bottom: 3rem; /* Add spacing */
 }
 
 .custom-title {
@@ -44,33 +47,80 @@ layout: home
 
 .subtitle {
     color: #ffffff;
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     font-size: 1.5em;
     letter-spacing: 0.1em;
+    text-transform: uppercase;
     margin-top: 0.5em;
 }
-</style>
 
-<div class="custom-header">
-    <h1 class="custom-title">Esteban Dal Monte</h1>
-    <div class="subtitle">
-        Music Producer
-    </div>
-</div>
+.elegant-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 4rem 0;
+}
 
-<!-- Video -->
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
-  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-          src="https://www.youtube.com/embed/IdxLhUqOf-U" 
-          title="Reel" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-  </iframe>
-</div>
+.fire-heading {
+    background: linear-gradient(45deg, #ff4d4d, #f9cb28);
+    -webkit-background-clip: text;
+    color: transparent;
+    position: relative;
+    animation: fire 6s ease-in-out infinite;
+}
 
-<style>
+@keyframes fire {
+    0% { text-shadow: 0 0 20px rgba(255,77,77,0.3); }
+    50% { text-shadow: 0 0 40px rgba(249,203,40,0.5); }
+    100% { text-shadow: 0 0 20px rgba(255,77,77,0.3); }
+}
+
+.contact-section {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 800px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(45deg, #ff4d4d, #f9cb28);
+    border-radius: 12px;
+    text-decoration: none;
+    margin: 2rem 0;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover {
+    transform: translateY(-5px);
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 2rem auto;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.social-icon:hover {
+    opacity: 1;
+}
+
 .elegant-text {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
     font-size: 1.1em;
@@ -80,15 +130,6 @@ layout: home
     max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
-}
-
-.elegant-heading {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 300;
-    color: #2c3e50;
-    margin: 1.5em 0;
 }
 
 .profile-container {
@@ -112,19 +153,7 @@ layout: home
 .elegant-text {
     flex-grow: 1;
 }
-</style>
 
-<h2 class="elegant-heading">About Esteban</h2>
-<div class="profile-container">
-    <img src="/images/yo2.jpeg" alt="Profile Photo" class="profile-image">
-    <div class="elegant-text">
-        <p>I'm a Music Producer and Sound Designer from Uruguay with over a decade of experience in the games industry.</p>
-        <p>My unique background combines music production with hands-on experience as a programmer and game designer, having completed more than 15 successful projects.</p>
-        <p>Now fully dedicated to music production in my personal studio, I bring a creativity-centered approach to every project I take on, blending my technical expertise with artistic vision to create new soundscapes.</p>
-    </div>
-</div>
-
-<style>
 .image-grid-games {
     display: flex;
     justify-content: center;
@@ -143,24 +172,7 @@ layout: home
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-</style>
 
-
-
-<div class="image-grid-games">
-    <img src="/images/airborne.jpg" alt="Airb">
-    <img src="/images/cleanupcapsule.jpg" alt="Clean">
-    <img src="/images/shipMiner2cropped.png" alt="Ship">
-    <img src="/images/bonsai.png" alt="Studio 3">
-    <img src="/images/scaloni2.png" alt="Studio 3">
-    <img src="/images/titans.png" alt="Studio 3">
-</div>
-
-<!--{:refdef: style="text-align: center;"}
-![studio sess](/images/studio2.png){: width="250" }
-{: refdef}-->
-
-<style>
 .image-grid {
     display: flex;
     justify-content: center;
@@ -179,12 +191,75 @@ layout: home
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
+.music-grid, .games-grid, .profile-container, .image-grid {
+    margin: 4rem auto;
+}
+
+.video-container {
+    margin-bottom: 4rem;
+}
 </style>
 
-<div class="image-grid">
-    <img src="/images/studio.jpg" alt="Studio 1">
-    <!--img src="/images/uruguay.png" alt="Studio 3"-->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+
+    const fireHeading = document.querySelector('.fire-heading');
+    observer.observe(fireHeading);
+});
+</script>
+
+<div class="custom-header">
+    <h1 class="custom-title">Esteban Dal Monte</h1>
+    <div class="subtitle">
+        Music Producer
+    </div>
 </div>
+
+<!-- Video -->
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
+  <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+          src="https://www.youtube.com/embed/It6vTaOWZhw?si=wIeLBsL1rdV3zHgP" 
+          title="Reel" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+  </iframe>
+</div>
+
+<h2 class="elegant-heading">About me</h2>
+<div class="profile-container">
+    <img src="/images/yo2.jpeg" alt="Profile Photo" class="profile-image">
+    <div class="elegant-text">
+        <p>I'm a Music Producer and Sound Designer with over a decade of experience in the games industry.</p>
+        <p>My unique background combines music production with hands-on experience as a programmer and game designer, having completed more than 15 successful projects.</p>
+        <p>Now fully dedicated to music production in my personal studio, I bring a creativity-centered approach to every project I take on, blending my technical expertise with artistic vision to create new soundscapes.</p>
+    </div>
+</div>
+
+<div class="image-grid-games">
+    <img src="/images/airborne.jpg" alt="Airb">
+    <img src="/images/cleanupcapsule.jpg" alt="Clean">
+    <img src="/images/shipMiner2cropped.png" alt="Ship">
+    <img src="/images/bonsai.png" alt="Studio 3">
+    <img src="/images/scaloni2.png" alt="Studio 3">
+    <img src="/images/titans.png" alt="Studio 3">
+</div>
+
+<!--{:refdef: style="text-align: center;"}
+![studio sess](/images/studio2.png){: width="250" }
+{: refdef}-->
+
 
 <h2 class="elegant-heading">Featured Music</h2>
 <div class="music-grid">
@@ -226,128 +301,31 @@ layout: home
   
 </div>
 
-
-
-
-
-
-<style>
-.social-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 2em auto;
-    max-width: 800px;
-    padding: 0 20px;
-}
-
-.social-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 24px;
-    background-color: white;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    color: #2c3e50;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.social-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #f8f9fa;
-}
-
-.social-button img {
-    width: 24px;
-    height: 24px;
-    margin-right: 12px;
-}
-</style>
-
-<h2 class="elegant-heading">Let's work together</h2>
-
-<div class="social-buttons">
-    <a href="mailto:correoesti@outlook.com" class="social-button">
-        <img src="https://cdn-icons-png.flaticon.com/512/552/552486.png" alt="Email">
-        Email
-    </a>
-    <a href="https://linkedin.com/in/dalmonteroquero" class="social-button" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
-        LinkedIn
-    </a>
-    <a href="https://soundcloud.com/dalmontemusic" class="social-button" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/145/145809.png" alt="SoundCloud">
-        SoundCloud
-    </a>
-    <a href="https://instagram.com/unf0ldmusic" class="social-button" target="_blank" rel="noopener">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
-            Instagram
-        </a>
+<div class="image-grid">
+    <img src="/images/studio.jpg" alt="Studio 1">
+    <!--img src="/images/uruguay.png" alt="Studio 3"-->
 </div>
 
-<!--tyle>
-.elegant-text {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-    font-size: 1.1em;
-    line-height: 1.8;
-    letter-spacing: 0.01em;
-    color: #2c3e50;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
+<h2 class="elegant-heading fire-heading">Let's Work Together</h2>
 
-.elegant-heading {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-    text-align: center;
-    font-size: 2em;
-    font-weight: 300;
-    color: #2c3e50;
-    margin: 1.5em 0;
-}
-
-.profile-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 3rem;
-    max-width: 1000px;
-    margin: 4rem auto;
-    padding: 0 20px;
-}
-
-.profile-images {
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.profile-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 4px;
-    object-fit: cover;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.elegant-text {
-    flex-grow: 1;
-}
-</style>
-
-<h2 class="elegant-heading">About Esteban</h2>
-<div class="profile-container">
-    <div class="profile-images">
-        <img src="/images/yo.jpeg" alt="Profile Photo" class="profile-image">
-        <img src="/images/studio.jpg" alt="Studio" class="profile-image">
+<div class="contact-section">
+  
+    
+    <div class="social-icons">
+        <a href="mailto:correoesti@outlook.com">
+            <img src="https://cdn-icons-png.flaticon.com/512/552/552486.png" alt="Email" class="social-icon">
+        </a>
+        <a href="https://soundcloud.com/dalmontemusic" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145809.png" alt="SoundCloud" class="social-icon">
+        </a>
+        <a href="https://linkedin.com/in/dalmonteroquero" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="social-icon">
+        </a>
+        <a href="https://instagram.com/unf0ldmusic" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://youtube.com/It6vTaOWZhw" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="social-icon">
+        </a>
     </div>
-    <div class="elegant-text">
-        <p>I'm a music producer from Uruguay with over a decade of experience in the games industry.</p>
-        <p>My unique background combines music production with hands-on experience as a programmer and game designer, having completed more than 15 successful projects.</p>
-        <p>Now fully dedicated to music production in my personal studio, I bring a creativity-centered approach to every project I take on, blending my technical expertise with artistic vision to create new soundscapes.</p>
-    </div>
-</div-->
+</div>
