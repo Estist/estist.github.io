@@ -253,11 +253,15 @@ layout: home
 
     .social-icons {
         gap: 20px;
+        align-items: center;
     }
 
     .social-icon {
         width: 50px;
         height: 50px;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        display: block;
     }
 
     .elegant-text {
