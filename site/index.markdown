@@ -199,7 +199,75 @@ layout: home
 .video-container {
     margin-bottom: 4rem;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .custom-title {
+        font-size: 2.5em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .elegant-heading {
+        font-size: 2em;
+        margin: 2rem 0;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile-images {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .music-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .game-image {
+        height: 150px;
+    }
+
+    .image-grid img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+
+    .social-icons {
+        gap: 20px;
+    }
+
+    .social-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .elegant-text {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+}
 </style>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
