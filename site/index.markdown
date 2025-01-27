@@ -396,7 +396,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="https://instagram.com/unf0ldmusic" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-icon">
         </a>
-        <a href="https://youtube.com/It6vTaOWZhw" target="_blank">
+        <a href="https://youtube.com/@unf0ld_music?si=AFZNpwxepNulJOIS" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="social-icon">
         </a>
     </div>
