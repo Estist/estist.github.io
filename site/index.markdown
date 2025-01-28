@@ -2,15 +2,6 @@
 layout: home
 #title: Esteban Dal Monte - Music Producer
 ---
-<!--Recently, I started my own company named [Pixel Core Games](https://x.com/pixelcoregames) and I am developing [Ship Miner](https://shipminer.arielcoppes.dev), a 1 bit low res pixelart twinstick sci fi miner game.  --> 
-
-
-
-<!--div align="center">
-<iframe width="420" height="315" src="http://youtu.be/XzsMsvoWbHM?si=OzhPgY9_ngqYIUKs" frameborder="0" allowfullscreen></iframe>
-</div-->
-
-<!--iframe width="420" height="315" src="http://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>-->
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap');
@@ -396,7 +387,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <a href="https://instagram.com/unf0ldmusic" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" class="social-icon">
         </a>
-        <a href="https://youtube.com/It6vTaOWZhw" target="_blank">
+        <a href="https://www.youtube.com/@UNF0LD_MUSIC" target="_blank">
             <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" class="social-icon">
         </a>
     </div>
