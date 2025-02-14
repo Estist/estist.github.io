@@ -287,6 +287,9 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="subtitle">
         Music Producer
     </div>
+    <!--div style="margin-top: 1rem;">
+        <a href="/resume/" style="color: #ffffff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 1em;">View Resume</a>
+    </div-->
 </div>
 
 <!-- Video -->
