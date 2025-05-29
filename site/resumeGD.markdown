@@ -6,7 +6,8 @@ permalink: /resumegd/
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap');
-
+ 
+ 
 /* Add these rules at the top of your style section */
 .page-content {
     padding: 0 !important;
