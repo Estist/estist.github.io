@@ -40,7 +40,7 @@ layout: home
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 1.5em;
+    font-size: 1.2em;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     margin-top: 0.5em;
@@ -118,69 +118,70 @@ layout: home
     line-height: 1.8;
     letter-spacing: 0.01em;
     color: #2c3e50;
-    max-width: 800px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
+.profile-container .elegant-text {
+    max-width: 100%;
+    flex-grow: 1;
+}
+
 .profile-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 3rem;
-    max-width: 1000px;
-    margin: 4rem auto;
+    gap: 2rem;
+    max-width: 2100px;
+    margin: 2rem auto;
     padding: 0 20px;
 }
 
 .profile-image {
     flex-shrink: 0;
-    width: 250px;
-    height: 250px;
+    width: 1000px;
+    height: 700px;
     border-radius: 4px; /* Match other images */
     object-fit: cover;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.elegant-text {
-    flex-grow: 1;
-}
-
 .image-grid-games {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    max-width: 1200px;
+    gap: 4px;
     margin: 2em auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .image-grid-games img {
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 260px;
     object-fit: cover;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.image-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 2em auto;
-    padding: 0 20px;
 }
 
 .image-grid img {
-    width: 300px;
-    height: 300px;
+    width: 1600px;
+    height: 390px;
     object-fit: cover;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.music-grid {
+    position: relative;
+    margin: 4rem auto;
+    padding: 3rem 0;
+    max-width: 2100px;
+}
+
+.music-grid > * {
+    position: relative;
+    z-index: 1;
 }
 
 .music-grid, .games-grid, .profile-container, .image-grid {
@@ -285,7 +286,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <div class="custom-header">
     <h1 class="custom-title">Esteban Dal Monte</h1>
     <div class="subtitle">
-        Music Producer
+        Music Producer & Technical Sound Designer
     </div>
     <!--div style="margin-top: 1rem;">
         <a href="/resume/" style="color: #ffffff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 1em;">View Resume</a>
@@ -305,31 +306,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <h2 class="elegant-heading">About me</h2>
 <div class="profile-container">
-    <img src="/images/yo2.jpeg" alt="Profile Photo" class="profile-image">
+    <img src="/images/StudioStanding.jpg" alt="Profile Photo" class="profile-image">
     <div class="elegant-text">
-        <p>I'm a Music Producer and Sound Designer with over a decade of experience in the games industry.</p>
+        <p>I'm a Music Producer and Technical Sound Designer with over a decade of experience in the games and media industry.</p>
         <p>My unique background combines music production with hands-on experience as a programmer and game designer, having completed more than 15 successful projects.</p>
         <p>Now fully dedicated to music production in my personal studio, I bring a creativity-centered approach to every project I take on, blending my technical expertise with artistic vision to create new soundscapes.</p>
     </div>
 </div>
 
+<h2 class="elegant-heading">Projects</h2>
 <div class="image-grid-games">
-    <img src="/images/airborne.jpg" alt="Airb">
-    <img src="/images/cleanupcapsule.jpg" alt="Clean">
-    <img src="/images/shipMiner2cropped.png" alt="Ship">
-    <img src="/images/bonsai.png" alt="Studio 3">
-    <img src="/images/scaloni2.png" alt="Studio 3">
-    <img src="/images/titans.png" alt="Studio 3">
+    <img src="/images/dragonwars.jpg" alt="KR5">
+    <img src="/images/shipMiner2cropped.png" alt="Ship Miner">
+    <img src="/images/cleanupcapsule.jpg" alt="Cleanup Capsule">
+    <img src="/images/Iron Marines.jpg" alt="Iron Marines">
+    <img src="/images/bonsai.png" alt="Bonsai">
+    <img src="/images/aconcagua3.jpg" alt="Aconcagua">
+    <img src="/images/superscaloni.png" alt="Super Scaloni">
+    <img src="/images/titans.png" alt="Titans">
+    <img src="/images/airborne.jpg" alt="Airborne">
 </div>
-
-<!--{:refdef: style="text-align: center;"}
-![studio sess](/images/studio2.png){: width="250" }
-{: refdef}-->
-
 
 <h2 class="elegant-heading">Featured Music</h2>
 <div class="music-grid">
 <div class="elegant-text" style="text-align: center;">
+  <div style="margin-bottom: 30px;">
+    <p style="color: #7f8c8d; font-size: 0.9em;">Click play to listen or visit <a href="https://soundcloud.com/dalmontemusic" target="_blank" style="color: #ff5500;">SoundCloud</a> for more</p>
+  </div>
+
   <iframe width="100%" 
           height="120" 
           scrolling="no" 
@@ -368,8 +372,7 @@ document.addEventListener('DOMContentLoaded', function() {
 </div>
 
 <div class="image-grid">
-    <img src="/images/studio.jpg" alt="Studio 1">
-    <!--img src="/images/uruguay.png" alt="Studio 3"-->
+    <img src="/images/StudioPlaying.jpg" alt="Studio Playing">
 </div>
 
 <h2 class="elegant-heading fire-heading">Let's Work Together</h2>
