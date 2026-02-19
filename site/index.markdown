@@ -377,9 +377,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="subtitle">
         Music Producer & Technical Sound Designer
     </div>
-    <!--div style="margin-top: 1rem;">
-        <a href="/resume/" style="color: #ffffff; text-decoration: none; font-family: 'Montserrat', sans-serif; font-size: 1em;">View Resume</a>
-    </div-->
 </div>
 
 <div class="profile-container">
@@ -444,7 +441,6 @@ document.addEventListener('DOMContentLoaded', function() {
           style="margin-top: 20px;" 
           src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2269370150&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
   </iframe>
-
 
   <iframe width="100%" 
           height="120" 
