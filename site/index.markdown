@@ -53,7 +53,7 @@ layout: home
     letter-spacing: 0.05em;
     text-align: center;
     font-size: 1.5em;
-    margin: 4rem 0;
+    margin: 3rem 0;
 }
 
 .fire-heading {
@@ -132,18 +132,23 @@ layout: home
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    max-width: 2100px;
-    margin: 2rem auto;
+    width: 100%;
+    margin: 2rem 0;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .profile-image {
     flex-shrink: 0;
-    width: 1000px;
-    height: 700px;
+    width: 80vw;
+    max-width: 50vw;
+    height: 500px;
     border-radius: 4px; /* Match other images */
     object-fit: cover;
+    object-position: center 10%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-left: calc(-20vw + 10%);
+    margin-right: calc(-20vw + 10%);
 }
 
 .image-grid-games {
@@ -175,8 +180,92 @@ layout: home
 .music-grid {
     position: relative;
     margin: 4rem auto;
-    padding: 3rem 0;
+    padding: 3rem 20px;
     max-width: 2100px;
+}
+
+/* Custom Music Player Styles */
+.music-player {
+    background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.track {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.track:hover {
+    background: #f9f9f9;
+    transform: translateX(4px);
+    border-left-color: #ff5500;
+}
+
+.track.active {
+    background: #fff2e6;
+    border-left-color: #ff5500;
+}
+
+.track-info {
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.track-title {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1em;
+}
+
+.play-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ff5500;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.play-btn:hover {
+    background: #ff6c1a;
+    transform: scale(1.1);
+}
+
+.audio-player {
+    width: 100%;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    height: 50px;
+}
+
+.player-info {
+    text-align: center;
+    margin-top: 1rem;
+    color: #7f8c8d;
+    font-size: 0.9em;
 }
 
 .music-grid > * {
@@ -293,6 +382,16 @@ document.addEventListener('DOMContentLoaded', function() {
     </div-->
 </div>
 
+<div class="profile-container">
+    <img src="/images/StudioStandingReduced.jpg" alt="Profile Photo" class="profile-image">
+    <h2 class="elegant-heading">About me</h2>
+    <div class="elegant-text">
+        <p>I'm a Music Producer and Technical Sound Designer with over a decade of experience in the games and media industry.</p>
+        <p>My unique background combines music production with hands-on experience as a programmer and game designer, having completed more than 15 successful projects.</p>
+        <p>Now fully dedicated to music production in my personal studio, I bring a creativity-centered approach to every project I take on, blending my technical expertise with artistic vision to create new soundscapes.</p>
+    </div>
+</div>
+
 <!-- Video -->
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
   <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
@@ -302,16 +401,6 @@ document.addEventListener('DOMContentLoaded', function() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
           allowfullscreen>
   </iframe>
-</div>
-
-<h2 class="elegant-heading">About me</h2>
-<div class="profile-container">
-    <img src="/images/StudioStanding.jpg" alt="Profile Photo" class="profile-image">
-    <div class="elegant-text">
-        <p>I'm a Music Producer and Technical Sound Designer with over a decade of experience in the games and media industry.</p>
-        <p>My unique background combines music production with hands-on experience as a programmer and game designer, having completed more than 15 successful projects.</p>
-        <p>Now fully dedicated to music production in my personal studio, I bring a creativity-centered approach to every project I take on, blending my technical expertise with artistic vision to create new soundscapes.</p>
-    </div>
 </div>
 
 <h2 class="elegant-heading">Projects</h2>
@@ -330,16 +419,21 @@ document.addEventListener('DOMContentLoaded', function() {
 <h2 class="elegant-heading">Featured Music</h2>
 <div class="music-grid">
 <div class="elegant-text" style="text-align: center;">
-  <div style="margin-bottom: 30px;">
-    <p style="color: #7f8c8d; font-size: 0.9em;">Click play to listen or visit <a href="https://soundcloud.com/dalmontemusic" target="_blank" style="color: #ff5500;">SoundCloud</a> for more</p>
-  </div>
-
+   <iframe width="100%" 
+          height="120" 
+          scrolling="no" 
+          frameborder="no" 
+          allow="autoplay"
+          style="margin-top: 20px;" 
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2269356032&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+  </iframe>
+ 
   <iframe width="100%" 
           height="120" 
           scrolling="no" 
           frameborder="no" 
           allow="autoplay" 
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1499376376&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2136453129&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
   </iframe>
 
   <iframe width="100%" 
@@ -348,8 +442,9 @@ document.addEventListener('DOMContentLoaded', function() {
           frameborder="no" 
           allow="autoplay"
           style="margin-top: 20px;" 
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1661129973&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2269370150&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
   </iframe>
+
 
   <iframe width="100%" 
           height="120" 
@@ -357,19 +452,11 @@ document.addEventListener('DOMContentLoaded', function() {
           frameborder="no" 
           allow="autoplay"
           style="margin-top: 20px;" 
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1854610773&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
-  </iframe>
-
-  <iframe width="100%" 
-          height="120" 
-          scrolling="no" 
-          frameborder="no" 
-          allow="autoplay"
-          style="margin-top: 20px;" 
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1436891956&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2269368971&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
   </iframe>
   
 </div>
+
 
 <div class="image-grid">
     <img src="/images/StudioPlaying.jpg" alt="Studio Playing">
