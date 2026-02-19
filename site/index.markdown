@@ -457,7 +457,6 @@ document.addEventListener('DOMContentLoaded', function() {
   
 </div>
 
-
 <div class="image-grid">
     <img src="/images/StudioPlaying.jpg" alt="Studio Playing">
 </div>
