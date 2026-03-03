@@ -460,7 +460,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="contact-section">
   
-    
+
+  
     <div class="social-icons">
         <a href="mailto:correoesti@outlook.com">
             <img src="https://cdn-icons-png.flaticon.com/512/552/552486.png" alt="Email" class="social-icon">
