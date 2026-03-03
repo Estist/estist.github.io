@@ -385,14 +385,13 @@ document.addEventListener('DOMContentLoaded', function() {
     <div class="elegant-text">
         <p>I'm a Music Producer and Technical Sound Designer with over a decade of experience in the games and media industry.</p>
         <p>My unique background combines music production with hands-on experience as a programmer and game designer, having completed more than 15 successful projects.</p>
-        <p>Now fully dedicated to music production in my personal studio, I bring a creativity-centered approach to every project I take on, blending my technical expertise with artistic vision to create new soundscapes.</p>
     </div>
 </div>
 
 <!-- Video -->
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; height: auto;">
   <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-          src="https://www.youtube.com/embed/R795M_7b26M?si=Bx0p49G4guD1ItgZ" 
+          src="https://www.youtube.com/embed/zqUuKT1YdLg?si=h3xghCXp-JWULgwj" 
           title="Reel" 
           frameborder="0" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
