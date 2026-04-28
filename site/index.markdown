@@ -399,6 +399,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </iframe>
 </div>
 
+
 <h2 class="elegant-heading">Projects</h2>
 <div class="image-grid-games">
     <img src="/images/dragonwars.jpg" alt="KR5">
